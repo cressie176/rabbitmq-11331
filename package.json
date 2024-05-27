@@ -1,0 +1,27 @@
+{
+  "name": "rabbitmq-11331",
+  "version": "1.0.0",
+  "description": "Version v3.13.0 of RabbitMQ breaks the behaviour of the x-death header so that the count attribute is no longer incremented when messages are repeatedly rejected.",
+  "main": "index.js",
+  "scripts": {
+    "v3.12.9": "RABBITMQ_URL=amqp://localhost:5672 node index",
+    "v3.13.0": "RABBITMQ_URL=amqp://localhost:5673 node index"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.10.4"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cressie176/rabbitmq-11331.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cressie176/rabbitmq-11331/issues"
+  },
+  "homepage": "https://github.com/cressie176/rabbitmq-11331#readme"
+}
