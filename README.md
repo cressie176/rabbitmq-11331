@@ -9,7 +9,7 @@ Version v3.13.0 of RabbitMQ breaks the behaviour of the x-death header so that t
 
 ### Before
 ```
-docker-compose up
+docker-compose start
 # It may take a few seconds for RabbitMQ to initialise
 ```
 
